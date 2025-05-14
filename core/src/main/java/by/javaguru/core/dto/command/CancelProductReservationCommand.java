@@ -1,17 +1,17 @@
-package by.javaguru.core.dto.event;
+package by.javaguru.core.dto.command;
 
 import java.util.UUID;
 
-public class PaymentProcessedFailedEvent {
+public class CancelProductReservationCommand {
 
     private UUID orderId;
     private UUID productId;
     private Integer productQuantity;
 
-    public PaymentProcessedFailedEvent() {
+    public CancelProductReservationCommand() {
     }
 
-    public PaymentProcessedFailedEvent(UUID orderId, UUID productId, Integer productQuantity) {
+    public CancelProductReservationCommand(UUID orderId, UUID productId, Integer productQuantity) {
         this.orderId = orderId;
         this.productId = productId;
         this.productQuantity = productQuantity;
